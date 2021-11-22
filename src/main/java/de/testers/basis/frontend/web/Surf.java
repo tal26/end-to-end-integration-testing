@@ -1,9 +1,9 @@
 package de.testers.basis.frontend.web;
 
+import de.testers.lib.Log;
 import de.testers.lib.Url;
 
-public class Surf {
-    private DriverWeb driverWeb;
+public class Surf extends AbstractWeb {
     private Url url;
 
     /**
@@ -12,9 +12,11 @@ public class Surf {
      * @param url
      */
     public Surf(DriverWeb driverWeb, Url url) {
-        this.driverWeb = driverWeb;
+        super(driverWeb);
         this.url = url;
         driverWeb.navigate(url);
+
+        Log.print("Surfed to page '" + url.get() + "' (Title: '" + driverWeb.getTitle() + "')");
     }
 
 

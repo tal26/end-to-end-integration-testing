@@ -1,4 +1,4 @@
 package de.testers.basis.frontend.mobile;
 
-public class Tap {
+public class Tap extends AbstractMobile {
 }

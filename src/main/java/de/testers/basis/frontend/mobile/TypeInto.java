@@ -1,4 +1,4 @@
 package de.testers.basis.frontend.mobile;
 
-public class TypeInto {
+public class TypeInto extends AbstractMobile {
 }
