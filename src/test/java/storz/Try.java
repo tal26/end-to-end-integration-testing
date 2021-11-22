@@ -2,7 +2,7 @@ package storz;
 
 import de.testers.basis.frontend.web.*;
 import org.junit.jupiter.api.Test;
-import storz.pageobject.Home;
+import storz.pageobject.HomePage;
 
 public class Try extends IntegrationTest{
     Try() {
@@ -11,7 +11,7 @@ public class Try extends IntegrationTest{
 
     @Test
     void tryTest() {
-        Home home = new Home(driver);
+        HomePage home = new HomePage(driver);
         home.open();
         home.search("storz");
 

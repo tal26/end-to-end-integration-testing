@@ -90,7 +90,7 @@ public class DriverWeb {
      *
      * @param key
      */
-    public void sendKeys(SendKeys.Key key) {
+    public void sendKeys(SendKeysWeb.Key key) {
         page.keyboard().press(key.getValue());
     }
 
@@ -100,6 +100,19 @@ public class DriverWeb {
                 .ScreenshotOptions()
                 .setPath(Paths.get(location)));
         return location;
+    }
+
+    /**
+     *
+     * @param xPath
+     * @return
+     */
+    public boolean wait(XPath xPath) {
+        try {
+            page.waitForSelector("xpath=" + xPath.getPath());
+            return true;
+        } catch (Exception e) {}
+        return false;
     }
 
     /**

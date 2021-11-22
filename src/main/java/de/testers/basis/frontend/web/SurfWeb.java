@@ -3,7 +3,7 @@ package de.testers.basis.frontend.web;
 import de.testers.lib.Log;
 import de.testers.lib.Url;
 
-public class Surf extends AbstractWeb {
+public class SurfWeb extends AbstractWeb {
     private Url url;
 
     /**
@@ -11,7 +11,7 @@ public class Surf extends AbstractWeb {
      * @param driverWeb
      * @param url
      */
-    public Surf(DriverWeb driverWeb, Url url) {
+    public SurfWeb(DriverWeb driverWeb, Url url) {
         super(driverWeb);
         this.url = url;
         driverWeb.navigate(url);

@@ -2,8 +2,8 @@ package de.testers.basis.frontend.web;
 
 import de.testers.lib.Log;
 
-public class Screenshot extends AbstractWeb {
-    public Screenshot(DriverWeb driverWeb) {
+public class ScreenshotWeb extends AbstractWeb {
+    public ScreenshotWeb(DriverWeb driverWeb) {
         super(driverWeb);
         String location = driverWeb.takeScreenshot();
 

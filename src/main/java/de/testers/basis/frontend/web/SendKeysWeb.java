@@ -2,11 +2,11 @@ package de.testers.basis.frontend.web;
 
 import de.testers.lib.Log;
 
-public class SendKeys extends AbstractWeb {
+public class SendKeysWeb extends AbstractWeb {
     private Key key;
 
-    public SendKeys(DriverWeb driverWeb,
-                    Key key) {
+    public SendKeysWeb(DriverWeb driverWeb,
+                       Key key) {
         super(driverWeb);
         this.key = key;
         driverWeb.sendKeys(key);

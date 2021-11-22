@@ -3,12 +3,12 @@ package de.testers.basis.frontend.web;
 import de.testers.lib.Log;
 import de.testers.lib.XPath;
 
-public class Fill extends AbstractWeb {
+public class FillWeb extends AbstractWeb {
     private String text;
 
-    public Fill(DriverWeb driverWeb,
-                XPath xpath,
-                String text) {
+    public FillWeb(DriverWeb driverWeb,
+                   XPath xpath,
+                   String text) {
         super(driverWeb, xpath);
         this.text = text;
 

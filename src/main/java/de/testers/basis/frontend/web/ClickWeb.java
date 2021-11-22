@@ -3,9 +3,9 @@ package de.testers.basis.frontend.web;
 import de.testers.lib.Log;
 import de.testers.lib.XPath;
 
-public class Click extends AbstractWeb {
+public class ClickWeb extends AbstractWeb {
 
-    public Click(DriverWeb driverWeb, XPath xpath) {
+    public ClickWeb(DriverWeb driverWeb, XPath xpath) {
         super(driverWeb, xpath);
         driverWeb.click(xpath);
 
