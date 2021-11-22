@@ -1,15 +1,18 @@
 package storz;
 
 import de.testers.basis.frontend.web.DriverWeb;
+import de.testers.basis.frontend.web.ScreenshotWeb;
 import de.testers.lib.Log;
+import org.aspectj.lang.annotation.After;
 import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 
-public abstract class IntegrationTest {
+public abstract class AbstractIntegrationTest {
     protected DriverWeb.BrowserId browserId;
     protected DriverWeb driver;
 
-    protected IntegrationTest(DriverWeb.BrowserId browserId) {
+    protected AbstractIntegrationTest(DriverWeb.BrowserId browserId) {
         this.browserId = browserId;
         driver = new DriverWeb(browserId);
     }
@@ -23,4 +26,5 @@ public abstract class IntegrationTest {
     public static void rampDown() {
         Log.print("Finished the test");
     }
+
 }

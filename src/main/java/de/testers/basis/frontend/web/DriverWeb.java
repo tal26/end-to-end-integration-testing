@@ -14,6 +14,8 @@ public class DriverWeb {
     private BrowserContext context;
     private Page page;
 
+    private String screenshotsLocation = "reports/screenshots/";
+
     /**
      *
      * @param browserId
@@ -95,7 +97,7 @@ public class DriverWeb {
     }
 
     public String takeScreenshot() {
-        String location = Watch.getFilePrefixWithCurrentDateTime() + "screenshot-" + browserType.name() + ".png";
+        String location = screenshotsLocation + Watch.getFilePrefixWithCurrentDateTime() + browserType.name() + ".png";
         page.screenshot(new Page
                 .ScreenshotOptions()
                 .setPath(Paths.get(location)));
