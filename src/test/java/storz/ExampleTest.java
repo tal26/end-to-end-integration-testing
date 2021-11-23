@@ -4,8 +4,8 @@ import de.testers.basis.frontend.web.*;
 import org.junit.jupiter.api.Test;
 import storz.pageobject.HomePage;
 
-public class Try extends AbstractIntegrationTest {
-    Try() {
+public class ExampleTest extends AbstractIntegrationTest {
+    ExampleTest() {
         super(DriverWeb.BrowserId.CHROMIUM);
     }
 

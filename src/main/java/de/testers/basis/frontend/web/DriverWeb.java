@@ -1,13 +1,14 @@
 package de.testers.basis.frontend.web;
 
 import com.microsoft.playwright.*;
+import de.testers.basis.frontend.web.techdepot.AbstractDriverWeb;
 import de.testers.lib.Url;
 import de.testers.lib.Watch;
 import de.testers.lib.XPath;
 
 import java.nio.file.Paths;
 
-public class DriverWeb {
+public class DriverWeb extends AbstractDriverWeb {
     private Playwright driver;
     private BrowserType browserType;
     private Browser browser;
@@ -30,7 +31,8 @@ public class DriverWeb {
     /**
      *
      */
-    private void launchBrowser() {
+    @Override
+    public void launchBrowser() {
         browser = browserType.launch();
         context = browser.newContext();
         page = context.newPage();
@@ -38,6 +40,7 @@ public class DriverWeb {
         //System.out.println(page.title());
     }
 
+    @Override
     public void quit() {
         page.close();
         context.close();
@@ -60,6 +63,7 @@ public class DriverWeb {
      *
      * @param url
      */
+    @Override
     public void navigate(Url url) {
         page.navigate(url.get());
     }
@@ -68,6 +72,7 @@ public class DriverWeb {
      *
      * @return
      */
+    @Override
     public String getTitle() {
         return page.title();
     }
@@ -76,6 +81,7 @@ public class DriverWeb {
      *
      * @param xpath
      */
+    @Override
     public void click(XPath xpath) {
         page.click("xpath=" + xpath.getPath());
     }
@@ -84,6 +90,7 @@ public class DriverWeb {
      *
      * @param text
      */
+    @Override
     public void fill(XPath xpath, String text) {
         page.fill("xpath=" + xpath.getPath(), text);
     }
@@ -92,10 +99,16 @@ public class DriverWeb {
      *
      * @param key
      */
+    @Override
     public void sendKeys(SendKeysWeb.Key key) {
         page.keyboard().press(key.getValue());
     }
 
+    /**
+     *
+     * @return
+     */
+    @Override
     public String takeScreenshot() {
         String location = screenshotsLocation + Watch.getFilePrefixWithCurrentDateTime() + browserType.name() + ".png";
         page.screenshot(new Page
@@ -109,6 +122,7 @@ public class DriverWeb {
      * @param xPath
      * @return
      */
+    @Override
     public boolean wait(XPath xPath) {
         try {
             page.waitForSelector("xpath=" + xPath.getPath());
