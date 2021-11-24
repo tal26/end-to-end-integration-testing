@@ -16,7 +16,7 @@ public class SurfWeb extends AbstractWeb {
         this.url = url;
         driverWeb.navigate(url);
 
-        Log.print("Surfed to page '" + url.get() + "' (Title: '" + driverWeb.getTitle() + "')");
+        Log.print("Surfed to page '" + url.getValue() + "' (Title: '" + driverWeb.getTitle() + "')");
     }
 
 

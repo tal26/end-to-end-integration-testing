@@ -6,7 +6,7 @@ public class Url {
         this.url = url;
     }
 
-    public String get() {
+    public String getValue() {
         return url;
     }
 }

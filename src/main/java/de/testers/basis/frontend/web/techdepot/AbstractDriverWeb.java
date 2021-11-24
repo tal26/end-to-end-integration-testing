@@ -14,4 +14,13 @@ public abstract class AbstractDriverWeb {
     protected abstract void sendKeys(SendKeysWeb.Key key);
     protected abstract String takeScreenshot();
     protected abstract boolean wait(XPath xPath);
+
+    /**
+     *
+     */
+    public enum BrowserId {
+        CHROMIUM,
+        WEBKIT,
+        FIREFOX;
+    }
 }
