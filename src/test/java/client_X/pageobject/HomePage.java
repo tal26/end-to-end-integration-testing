@@ -1,4 +1,4 @@
-package storz.pageobject;
+package client_X.pageobject;
 
 import de.testers.basis.frontend.web.*;
 import de.testers.lib.Url;

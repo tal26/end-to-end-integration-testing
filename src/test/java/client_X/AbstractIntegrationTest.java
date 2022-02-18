@@ -1,11 +1,8 @@
-package storz;
+package client_X;
 
 import de.testers.basis.frontend.web.DriverWeb;
-import de.testers.basis.frontend.web.ScreenshotWeb;
 import de.testers.lib.Log;
-import org.aspectj.lang.annotation.After;
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 
 public abstract class AbstractIntegrationTest {

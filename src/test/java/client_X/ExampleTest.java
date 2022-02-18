@@ -1,11 +1,9 @@
-package storz;
+package client_X;
 
-import de.testers.basis.backend.Backend;
-import de.testers.basis.backend.lib.Status;
 import de.testers.basis.frontend.web.*;
 import org.junit.jupiter.api.Test;
-import storz.backend.BackendConfig;
-import storz.pageobject.HomePage;
+import client_X.backend.BackendConfig;
+import client_X.pageobject.HomePage;
 
 import static io.restassured.RestAssured.given;
 
@@ -18,7 +16,7 @@ public class ExampleTest extends AbstractIntegrationTest {
     void frontEndTest() {
         HomePage home = new HomePage(driver);
         home.open();
-        home.search("storz");
+        home.search("client_X");
 
         new ScreenshotWeb(driver);
         driver.quit();

@@ -1,4 +1,4 @@
-package storz.backend;
+package client_X.backend;
 
 import de.testers.basis.backend.Backend;
 import de.testers.basis.backend.lib.ContentType;
