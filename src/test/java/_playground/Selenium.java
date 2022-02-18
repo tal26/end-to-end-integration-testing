@@ -1,4 +1,4 @@
-package playground;
+package _playground;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;

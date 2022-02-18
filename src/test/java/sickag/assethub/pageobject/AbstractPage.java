@@ -1,4 +1,4 @@
-package client_X.pageobject;
+package sickag.assethub.pageobject;
 
 import de.testers.basis.frontend.web.DriverWeb;
 

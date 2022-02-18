@@ -1,9 +1,10 @@
-package client_X;
+package sickag.assethub;
 
-import de.testers.basis.frontend.web.*;
+import de.testers.basis.frontend.web.DriverWeb;
+import de.testers.basis.frontend.web.ScreenshotWeb;
 import org.junit.jupiter.api.Test;
-import client_X.backend.BackendConfig;
-import client_X.pageobject.HomePage;
+import sickag.assethub.backend.BackendConfig;
+import sickag.assethub.pageobject.HomePage;
 
 import static io.restassured.RestAssured.given;
 
@@ -16,7 +17,7 @@ public class ExampleTest extends AbstractIntegrationTest {
     void frontEndTest() {
         HomePage home = new HomePage(driver);
         home.open();
-        home.search("client_X");
+        home.search("_client_X");
 
         new ScreenshotWeb(driver);
         driver.quit();

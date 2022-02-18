@@ -1,4 +1,4 @@
-package playground;
+package _playground;
 
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.Page;

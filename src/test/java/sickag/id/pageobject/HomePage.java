@@ -1,11 +1,11 @@
-package client_X.pageobject;
+package sickag.id.pageobject;
 
 import de.testers.basis.frontend.web.*;
 import de.testers.lib.Url;
 import de.testers.lib.XPath;
 
-public class HomePage extends AbstractPage{
-    private Url url = new Url("http://www.storz.com");
+public class HomePage extends AbstractPage {
+    private Url url = new Url("http://www.google.com");
 
     private XPath carousel = new XPath("Carousel", "//*[@id='stage']");
     private XPath allowCookies = new XPath("Allow cookies", "//*[@id='onetrust-accept-btn-handler']");

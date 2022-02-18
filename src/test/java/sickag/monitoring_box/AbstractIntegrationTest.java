@@ -1,4 +1,4 @@
-package client_X;
+package sickag.monitoring_box;
 
 import de.testers.basis.frontend.web.DriverWeb;
 import de.testers.lib.Log;

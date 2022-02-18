@@ -1,6 +1,5 @@
-package playground;
+package _playground;
 
-import com.microsoft.playwright.options.*;
 import com.microsoft.playwright.*;
 import org.junit.jupiter.api.Test;
 
