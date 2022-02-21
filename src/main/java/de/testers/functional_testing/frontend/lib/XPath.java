@@ -1,4 +1,4 @@
-package de.testers.base.frontend.lib;
+package de.testers.functional_testing.frontend.lib;
 
 public class XPath {
     private String xpath;

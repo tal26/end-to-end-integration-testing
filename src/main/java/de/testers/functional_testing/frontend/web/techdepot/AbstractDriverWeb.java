@@ -1,6 +1,6 @@
-package de.testers.base.frontend.web.techdepot;
+package de.testers.functional_testing.frontend.web.techdepot;
 
-import de.testers.base.frontend.web.SendKeysWeb;
+import de.testers.functional_testing.frontend.web.SendKeysWeb;
 import de.testers.lib.Url;
 import de.testers.lib.XPath;
 

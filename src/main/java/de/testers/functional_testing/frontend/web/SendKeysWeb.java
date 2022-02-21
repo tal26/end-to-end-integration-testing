@@ -1,4 +1,4 @@
-package de.testers.base.frontend.web;
+package de.testers.functional_testing.frontend.web;
 
 import de.testers.lib.Log;
 

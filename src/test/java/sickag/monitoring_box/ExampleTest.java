@@ -1,7 +1,7 @@
 package sickag.monitoring_box;
 
-import de.testers.base.frontend.web.DriverWeb;
-import de.testers.base.frontend.web.ScreenshotWeb;
+import de.testers.functional_testing.frontend.web.DriverWeb;
+import de.testers.functional_testing.frontend.web.ScreenshotWeb;
 import org.junit.jupiter.api.Test;
 import sickag.monitoring_box.backend.BackendConfig;
 import sickag.monitoring_box.pageobject.HomePage;

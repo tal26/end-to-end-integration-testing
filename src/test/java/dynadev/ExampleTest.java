@@ -1,7 +1,7 @@
 package dynadev;
 
-import de.testers.base.frontend.web.DriverWeb;
-import de.testers.base.frontend.web.ScreenshotWeb;
+import de.testers.functional_testing.frontend.web.DriverWeb;
+import de.testers.functional_testing.frontend.web.ScreenshotWeb;
 import dynadev.backend.BackendConfig;
 import dynadev.pageobject.HomePage;
 import org.junit.jupiter.api.Test;

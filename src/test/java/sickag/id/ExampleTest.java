@@ -1,7 +1,7 @@
 package sickag.id;
 
-import de.testers.base.frontend.web.DriverWeb;
-import de.testers.base.frontend.web.ScreenshotWeb;
+import de.testers.functional_testing.frontend.web.DriverWeb;
+import de.testers.functional_testing.frontend.web.ScreenshotWeb;
 import org.junit.jupiter.api.Test;
 import sickag.id.backend.BackendConfig;
 import sickag.id.pageobject.HomePage;

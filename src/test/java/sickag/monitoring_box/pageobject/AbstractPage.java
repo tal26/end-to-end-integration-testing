@@ -1,6 +1,6 @@
 package sickag.monitoring_box.pageobject;
 
-import de.testers.base.frontend.web.DriverWeb;
+import de.testers.functional_testing.frontend.web.DriverWeb;
 
 public abstract class AbstractPage {
     protected DriverWeb driverWeb;

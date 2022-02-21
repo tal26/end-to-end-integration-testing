@@ -1,9 +1,9 @@
-package de.testers.base.backend;
+package de.testers.functional_testing.backend;
 
-import de.testers.base.backend.lib.Status;
+import de.testers.functional_testing.backend.lib.Status;
 
-import de.testers.base.backend.lib.ContentType;
-import de.testers.base.backend.lib.Header;
+import de.testers.functional_testing.backend.lib.ContentType;
+import de.testers.functional_testing.backend.lib.Header;
 import de.testers.lib.Url;
 
 import java.util.List;

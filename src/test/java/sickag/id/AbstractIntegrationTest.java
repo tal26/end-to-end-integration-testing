@@ -1,6 +1,6 @@
 package sickag.id;
 
-import de.testers.base.frontend.web.DriverWeb;
+import de.testers.functional_testing.frontend.web.DriverWeb;
 import de.testers.lib.Log;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;

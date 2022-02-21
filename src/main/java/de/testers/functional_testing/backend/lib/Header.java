@@ -1,4 +1,4 @@
-package de.testers.base.backend.lib;
+package de.testers.functional_testing.backend.lib;
 
 public class Header {
     private String key;

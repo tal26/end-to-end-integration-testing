@@ -1,7 +1,7 @@
 package sickag.assethub.pageobject;
 
-import de.testers.base.frontend.web.DriverWeb;
-import de.testers.base.frontend.web.ValidateWeb;
+import de.testers.functional_testing.frontend.web.DriverWeb;
+import de.testers.functional_testing.frontend.web.ValidateWeb;
 import de.testers.lib.XPath;
 
 public class SearchPage extends AbstractPage {

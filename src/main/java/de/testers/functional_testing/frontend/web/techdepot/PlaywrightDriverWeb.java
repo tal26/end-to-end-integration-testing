@@ -1,15 +1,14 @@
-package de.testers.base.frontend.web;
+package de.testers.functional_testing.frontend.web.techdepot;
 
 import com.microsoft.playwright.*;
-import de.testers.base.frontend.web.techdepot.AbstractDriverWeb;
+import de.testers.functional_testing.frontend.web.SendKeysWeb;
 import de.testers.lib.Url;
 import de.testers.lib.Watch;
 import de.testers.lib.XPath;
 
 import java.nio.file.Paths;
 
-public class DriverWeb extends AbstractDriverWeb {
-
+public class PlaywrightDriverWeb extends AbstractDriverWeb {
     private Playwright driver;
     private BrowserType browserType;
     private Browser browser;
@@ -22,8 +21,7 @@ public class DriverWeb extends AbstractDriverWeb {
      *
      * @param browserId
      */
-    public DriverWeb(BrowserId browserId) {
-
+    public PlaywrightDriverWeb(BrowserId browserId) {
         driver = Playwright.create();
         setBrowserType(browserId);
         launchBrowser();

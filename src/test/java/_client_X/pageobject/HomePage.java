@@ -1,6 +1,6 @@
 package _client_X.pageobject;
 
-import de.testers.base.frontend.web.*;
+import de.testers.functional_testing.frontend.web.*;
 import de.testers.lib.Url;
 import de.testers.lib.XPath;
 

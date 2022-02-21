@@ -1,7 +1,7 @@
 package mercedes_benz;
 
-import de.testers.base.frontend.web.DriverWeb;
-import de.testers.base.frontend.web.ScreenshotWeb;
+import de.testers.functional_testing.frontend.web.DriverWeb;
+import de.testers.functional_testing.frontend.web.ScreenshotWeb;
 import mercedes_benz.backend.BackendConfig;
 import mercedes_benz.pageobject.HomePage;
 import org.junit.jupiter.api.Test;
