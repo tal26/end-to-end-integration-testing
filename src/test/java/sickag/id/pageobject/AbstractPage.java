@@ -1,6 +1,6 @@
 package sickag.id.pageobject;
 
-import de.testers.basis.frontend.web.DriverWeb;
+import de.testers.base.frontend.web.DriverWeb;
 
 public abstract class AbstractPage {
     protected DriverWeb driverWeb;

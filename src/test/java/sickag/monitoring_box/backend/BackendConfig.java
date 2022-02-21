@@ -1,9 +1,9 @@
 package sickag.monitoring_box.backend;
 
-import de.testers.basis.backend.Backend;
-import de.testers.basis.backend.lib.ContentType;
-import de.testers.basis.backend.lib.Header;
-import de.testers.basis.backend.lib.Status;
+import de.testers.base.backend.Backend;
+import de.testers.base.backend.lib.ContentType;
+import de.testers.base.backend.lib.Header;
+import de.testers.base.backend.lib.Status;
 import de.testers.lib.Url;
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package mercedes_benz.pageobject;
 
-import de.testers.basis.frontend.web.*;
+import de.testers.base.frontend.web.*;
 import de.testers.lib.Url;
 import de.testers.lib.XPath;
 

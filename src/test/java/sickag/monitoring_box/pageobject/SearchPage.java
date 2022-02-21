@@ -1,7 +1,7 @@
 package sickag.monitoring_box.pageobject;
 
-import de.testers.basis.frontend.web.DriverWeb;
-import de.testers.basis.frontend.web.ValidateWeb;
+import de.testers.base.frontend.web.DriverWeb;
+import de.testers.base.frontend.web.ValidateWeb;
 import de.testers.lib.XPath;
 
 public class SearchPage extends AbstractPage {

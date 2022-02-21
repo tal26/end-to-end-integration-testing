@@ -1,6 +1,6 @@
 package mercedes_benz;
 
-import de.testers.basis.frontend.web.DriverWeb;
+import de.testers.base.frontend.web.DriverWeb;
 import de.testers.lib.Log;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;

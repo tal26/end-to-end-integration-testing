@@ -1,6 +1,6 @@
 package _client_X;
 
-import de.testers.basis.frontend.web.*;
+import de.testers.base.frontend.web.*;
 import org.junit.jupiter.api.Test;
 import _client_X.backend.BackendConfig;
 import _client_X.pageobject.HomePage;

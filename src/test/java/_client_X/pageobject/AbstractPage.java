@@ -1,6 +1,6 @@
 package _client_X.pageobject;
 
-import de.testers.basis.frontend.web.DriverWeb;
+import de.testers.base.frontend.web.DriverWeb;
 
 public abstract class AbstractPage {
     protected DriverWeb driverWeb;
