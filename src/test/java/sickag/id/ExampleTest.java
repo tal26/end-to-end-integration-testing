@@ -4,6 +4,7 @@ import de.testers.functional_testing.frontend.web.DriverWeb;
 import de.testers.functional_testing.frontend.web.ScreenshotWeb;
 import org.junit.jupiter.api.Test;
 import sickag.id.backend.BackendConfig;
+import sickag.id.lib.Config;
 import sickag.id.pageobject.HomePage;
 
 import static io.restassured.RestAssured.given;
@@ -15,9 +16,8 @@ public class ExampleTest extends AbstractIntegrationTest {
 
     @Test
     void frontEndTest() {
-        HomePage home = new HomePage(driver);
+        HomePage home = new HomePage(driver, Config.productionEnvironment);
         home.open();
-        home.search("_client_X");
 
         new ScreenshotWeb(driver);
         driver.quit();

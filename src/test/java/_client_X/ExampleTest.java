@@ -4,6 +4,7 @@ import de.testers.functional_testing.frontend.web.*;
 import org.junit.jupiter.api.Test;
 import _client_X.backend.BackendConfig;
 import _client_X.pageobject.HomePage;
+import sickag.id.lib.Config;
 
 import static io.restassured.RestAssured.given;
 
@@ -12,14 +13,18 @@ public class ExampleTest extends AbstractIntegrationTest {
         super(DriverWeb.BrowserId.CHROMIUM);
     }
 
+    private void getThruID() {
+        sickag.id.pageobject.HomePage idHome
+                = new sickag.id.pageobject.HomePage(driver, Config.productionEnvironment);
+        idHome.open();
+    }
+
     @Test
     void frontEndTest() {
+        getThruID();
         HomePage home = new HomePage(driver);
         home.open();
         home.search("_client_X");
-
-        new ScreenshotWeb(driver);
-        driver.quit();
     }
 
     @Test

@@ -5,12 +5,9 @@ import de.testers.lib.Url;
 import de.testers.lib.User;
 
 public class Config {
-    public static User prodUser = new User("tal@testers.de", "Sobaka$1");
-    public static User devUser = new User("test216a.assethub@sick.de", "g\"kwcY\"^h3Xg}ma~[9Mh");
 
-    public static Url prodUrl = new Url("http://assethub.cloud.sick.com");
-    public static Url devUrl = new Url("http://dev.sick.ag.cloud");
+    public static Url url = new Url("https://id.sick.com");
 
-    public static Environment prod = new Environment(prodUrl, prodUser);
-    public static Environment dev = new Environment(devUrl, devUser);
+    public static Environment productionEnvironment = new Environment(url, sickag.assethub.lib.Config.prodUser);
+
 }

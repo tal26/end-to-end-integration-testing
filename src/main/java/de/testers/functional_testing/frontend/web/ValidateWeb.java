@@ -3,6 +3,7 @@ package de.testers.functional_testing.frontend.web;
 import de.testers.lib.XPath;
 
 public class ValidateWeb extends AbstractWeb{
+
     private boolean isExpectedToExist;
     public ValidateWeb(DriverWeb driverWeb,
                        XPath xPath,

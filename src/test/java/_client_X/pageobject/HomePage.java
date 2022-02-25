@@ -1,11 +1,15 @@
 package _client_X.pageobject;
 
 import de.testers.functional_testing.frontend.web.*;
+import de.testers.lib.Environment;
 import de.testers.lib.Url;
+import de.testers.lib.User;
 import de.testers.lib.XPath;
 
 public class HomePage extends AbstractPage{
     private Url url = new Url("http://www.google.com");
+    private Environment environment = new Environment(new Url("http://www.google.com"),
+            new User("usr", "pwd"));
 
     private XPath carousel = new XPath("Carousel", "//*[@id='stage']");
     private XPath allowCookies = new XPath("Allow cookies", "//*[@id='onetrust-accept-btn-handler']");

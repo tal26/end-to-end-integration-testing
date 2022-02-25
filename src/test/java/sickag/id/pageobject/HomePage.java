@@ -1,36 +1,52 @@
 package sickag.id.pageobject;
 
 import de.testers.functional_testing.frontend.web.*;
+import de.testers.lib.Environment;
 import de.testers.lib.Url;
 import de.testers.lib.XPath;
 
 public class HomePage extends AbstractPage {
-    private Url url = new Url("http://www.google.com");
+    private Environment environment;
 
-    private XPath carousel = new XPath("Carousel", "//*[@id='stage']");
-    private XPath allowCookies = new XPath("Allow cookies", "//*[@id='onetrust-accept-btn-handler']");
-    private XPath searchField = new XPath("Search field", "//*[@id='head-search']");
-    private XPath searchButton = new XPath("Search button","//*[@id='head-search-btn']/em");
+    private XPath cookiesPopup = new XPath("Cookies Popup", "//*[@id='gdpr_modal_wrapper']/div[1]");
+    private XPath agreeButton = new XPath("Agree button", "//*[@id='gdpr_modal_button_consent']");
+    private XPath userNameField = new XPath("User name field", "//*[@id='username-input']");
+    private XPath userPasswordField = new XPath("User password field", "//*[@id='password-input']");
+    private XPath rememberMeCheckBox = new XPath("Remember me checkbox", "//*[@id='rememberMe']");
+    private XPath loginButton = new XPath("Login button", "//*[@id='kc-login']");
 
-    public HomePage(DriverWeb driverWeb) {
+
+    public HomePage(DriverWeb driverWeb,
+                    Environment environment) {
         super(driverWeb);
+        this.environment = environment;
     }
 
     public void open() {
-        new SurfWeb(driverWeb, url);
-        makeSure();
+        new SurfWeb(driverWeb, environment);
+        agreeToCookies();
+        login();
     }
 
-    public void search(String text) {
-        new ClickWeb(driverWeb, allowCookies);
-        new FillWeb(driverWeb, searchField, text);
-        new ClickWeb(driverWeb, searchButton);
+    /**
+     *
+     */
+    private void agreeToCookies() {
+        new ClickWeb(driverWeb, agreeButton);
+    }
 
-        new SearchPage(driverWeb);
+    /**
+     *
+     */
+    private void login() {
+        new FillWeb(driverWeb, userNameField, environment.user.loginName);
+        new FillWeb(driverWeb, userPasswordField, environment.user.pwd);
+        new ClickWeb(driverWeb, rememberMeCheckBox);
+        new ClickWeb(driverWeb, loginButton);
     }
 
     @Override
     protected void makeSure() {
-        new ValidateWeb(driverWeb, carousel);
+        new ValidateWeb(driverWeb, cookiesPopup);
     }
 }

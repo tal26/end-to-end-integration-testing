@@ -6,8 +6,6 @@ public class ScreenshotWeb extends AbstractWeb {
     public ScreenshotWeb(DriverWeb driverWeb) {
         super(driverWeb);
         String location = driverWeb.takeScreenshot();
-
         Log.print("Screenshot saved at '" + location + "'");
-
     }
 }

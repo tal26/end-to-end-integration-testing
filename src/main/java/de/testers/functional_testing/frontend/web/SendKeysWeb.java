@@ -9,8 +9,8 @@ public class SendKeysWeb extends AbstractWeb {
                        Key key) {
         super(driverWeb);
         this.key = key;
+        Log.print("Sending key '" + key.getValue() + "' to the browser");
         driverWeb.sendKeys(key);
-        Log.print("Sent key '" + key.getValue() + "' to the browser");
     }
 
     public enum Key {
