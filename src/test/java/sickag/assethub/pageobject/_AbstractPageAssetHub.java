@@ -12,8 +12,8 @@ public abstract class _AbstractPageAssetHub {
     protected _AbstractPageAssetHub(DriverWeb driverWeb) {
         this.driverWeb = driverWeb;
     }
-    protected abstract void makeSure();
     public abstract void open();
+    protected abstract void makeSure();
 
     /**
      *

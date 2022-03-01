@@ -7,7 +7,7 @@ import de.testers.lib.Url;
 
 public class AssetManagementAssetHubPage extends _AbstractPageAssetHub {
     public AssetManagementAssetHubPage(DriverWeb driverWeb,
-                                Environment environment) {
+                                       Environment environment) {
         super(driverWeb);
         this.environment = environment;
         this.baseLink = new Url(environment.url.getValue() + "/asset");
