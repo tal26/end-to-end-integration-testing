@@ -10,7 +10,7 @@ public class SanityTest extends _Test {
     }
 
     @Test
-    void goThruSideMenuLinksTest() {
+    public void goThruSideMenuLinksTest() {
         new HomePageSickID(driver, sickIdEnvironment).open();
         new DashboardAssetHubPage(driver, assetHubEnvironment).open();
         /*
