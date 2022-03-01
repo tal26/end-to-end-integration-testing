@@ -6,7 +6,7 @@ import de.testers.lib.Url;
 import de.testers.lib.User;
 import de.testers.lib.XPath;
 
-public class HomePage extends AbstractPage{
+public class HomePageX extends AbstractPageX {
     private Url url = new Url("http://www.google.com");
     private Environment environment = new Environment(new Url("http://www.google.com"),
             new User("usr", "pwd"));
@@ -16,10 +16,11 @@ public class HomePage extends AbstractPage{
     private XPath searchField = new XPath("Search field", "//*[@id='head-search']");
     private XPath searchButton = new XPath("Search button","//*[@id='head-search-btn']/em");
 
-    public HomePage(DriverWeb driverWeb) {
+    public HomePageX(DriverWeb driverWeb) {
         super(driverWeb);
     }
 
+    @Override
     public void open() {
         new SurfWeb(driverWeb, url);
         makeSure();
@@ -30,7 +31,7 @@ public class HomePage extends AbstractPage{
         new FillWeb(driverWeb, searchField, text);
         new ClickWeb(driverWeb, searchButton);
 
-        new SearchPage(driverWeb);
+        new SearchPageX(driverWeb);
     }
 
     @Override

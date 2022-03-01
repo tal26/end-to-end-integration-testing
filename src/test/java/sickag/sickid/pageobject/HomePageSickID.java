@@ -1,11 +1,10 @@
-package sickag.id.pageobject;
+package sickag.sickid.pageobject;
 
 import de.testers.functional_testing.frontend.web.*;
 import de.testers.lib.Environment;
-import de.testers.lib.Url;
 import de.testers.lib.XPath;
 
-public class HomePage extends AbstractPage {
+public class HomePageSickID extends AbstractPageSickID {
     private Environment environment;
 
     private XPath cookiesPopup = new XPath("Cookies Popup", "//*[@id='gdpr_modal_wrapper']/div[1]");
@@ -16,8 +15,8 @@ public class HomePage extends AbstractPage {
     private XPath loginButton = new XPath("Login button", "//*[@id='kc-login']");
 
 
-    public HomePage(DriverWeb driverWeb,
-                    Environment environment) {
+    public HomePageSickID(DriverWeb driverWeb,
+                          Environment environment) {
         super(driverWeb);
         this.environment = environment;
     }

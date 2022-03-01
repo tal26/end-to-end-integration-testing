@@ -17,6 +17,6 @@ public class XPath {
     }
 
     public String toString() {
-        return " '" + name + "'";
+        return "'" + name + "'";
     }
 }

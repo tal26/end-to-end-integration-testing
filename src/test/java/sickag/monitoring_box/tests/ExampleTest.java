@@ -1,4 +1,4 @@
-package sickag.monitoring_box;
+package sickag.monitoring_box.tests;
 
 import de.testers.functional_testing.frontend.web.DriverWeb;
 import de.testers.functional_testing.frontend.web.ScreenshotWeb;
@@ -8,7 +8,7 @@ import sickag.monitoring_box.pageobject.HomePage;
 
 import static io.restassured.RestAssured.given;
 
-public class ExampleTest extends AbstractIntegrationTest {
+public class ExampleTest extends _Test {
     ExampleTest() {
         super(DriverWeb.BrowserId.CHROMIUM);
     }

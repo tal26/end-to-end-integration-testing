@@ -4,7 +4,7 @@ import de.testers.lib.Environment;
 import de.testers.lib.Url;
 import de.testers.lib.User;
 
-public class Config {
+public class ConfigX {
     public static User prodUser = new User("x", "x");
     public static User devUser = new User("x", "x");
 

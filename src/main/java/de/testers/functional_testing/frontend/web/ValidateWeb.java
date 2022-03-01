@@ -1,5 +1,6 @@
 package de.testers.functional_testing.frontend.web;
 
+import de.testers.lib.Log;
 import de.testers.lib.XPath;
 
 public class ValidateWeb extends AbstractWeb{
@@ -13,9 +14,11 @@ public class ValidateWeb extends AbstractWeb{
 
         boolean isAppeared = driverWeb.wait(xPath);
 
-        if(isAppeared != isAppeared) {
-            throw new WebTestFailedException(driverWeb,
-                    xPath.toString() + "was expected" + getExpectation());
+        String message = xPath.toString() + " ('" + xPath.getPath() + "') was expected" + getExpectation();
+        if(isAppeared != isExpectedToExist) {
+            throw new WebTestFailedException(driverWeb, message);
+        } else {
+            Log.print(message + ", which indeed was the case.");
         }
     }
 
@@ -29,7 +32,7 @@ public class ValidateWeb extends AbstractWeb{
      * @return
      */
     private String getExpectation() {
-        if(isExpectedToExist) return " to appear.";
-        return " not to appear.";
+        if(isExpectedToExist) return " to appear";
+        return " not to appear";
     }
 }

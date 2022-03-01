@@ -1,15 +1,15 @@
-package sickag.id;
+package sickag.monitoring_box.tests;
 
 import de.testers.functional_testing.frontend.web.DriverWeb;
 import de.testers.lib.Log;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 
-public abstract class AbstractIntegrationTest {
+public abstract class _Test {
     protected DriverWeb.BrowserId browserId;
     protected DriverWeb driver;
 
-    protected AbstractIntegrationTest(DriverWeb.BrowserId browserId) {
+    protected _Test(DriverWeb.BrowserId browserId) {
         this.browserId = browserId;
         driver = new DriverWeb(browserId);
     }

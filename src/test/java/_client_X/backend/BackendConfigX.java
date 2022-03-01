@@ -9,7 +9,7 @@ import de.testers.lib.Url;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BackendConfig {
+public class BackendConfigX {
     private static Url url = new Url("http://demo6116845.mockable.io/login");
     private static ContentType contentType = new ContentType("application/x-www-form-urlencoded; charset");
     private static List<Header> getHeaders() {

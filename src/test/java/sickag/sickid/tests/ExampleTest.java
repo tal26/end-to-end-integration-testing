@@ -1,30 +1,26 @@
-package _client_X;
+package sickag.sickid.tests;
 
-import de.testers.functional_testing.frontend.web.*;
+import de.testers.functional_testing.frontend.web.DriverWeb;
+import de.testers.functional_testing.frontend.web.ScreenshotWeb;
 import org.junit.jupiter.api.Test;
-import _client_X.backend.BackendConfig;
-import _client_X.pageobject.HomePage;
-import sickag.id.lib.Config;
+import sickag.sickid.backend.BackendConfig;
+import sickag.sickid.lib.ConfigSickID;
+import sickag.sickid.pageobject.HomePageSickID;
 
 import static io.restassured.RestAssured.given;
 
-public class ExampleTest extends AbstractIntegrationTest {
+public class ExampleTest extends AbstractIntegrationTestSickID {
     ExampleTest() {
         super(DriverWeb.BrowserId.CHROMIUM);
     }
 
-    private void getThruID() {
-        sickag.id.pageobject.HomePage idHome
-                = new sickag.id.pageobject.HomePage(driver, Config.productionEnvironment);
-        idHome.open();
-    }
-
     @Test
     void frontEndTest() {
-        getThruID();
-        HomePage home = new HomePage(driver);
+        HomePageSickID home = new HomePageSickID(driver, ConfigSickID.production);
         home.open();
-        home.search("_client_X");
+
+        new ScreenshotWeb(driver);
+        driver.quit();
     }
 
     @Test

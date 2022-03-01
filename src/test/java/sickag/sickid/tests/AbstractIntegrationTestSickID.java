@@ -1,19 +1,15 @@
-package _client_X;
+package sickag.sickid.tests;
 
 import de.testers.functional_testing.frontend.web.DriverWeb;
-import de.testers.functional_testing.frontend.web.ScreenshotWeb;
 import de.testers.lib.Log;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
-import sickag.id.lib.Config;
-import sickag.id.pageobject.HomePage;
 
-public abstract class AbstractIntegrationTest {
+public abstract class AbstractIntegrationTestSickID {
     protected DriverWeb.BrowserId browserId;
-    protected static DriverWeb driver;
-    private static DriverWeb operativeDriver;
+    protected DriverWeb driver;
 
-    protected AbstractIntegrationTest(DriverWeb.BrowserId browserId) {
+    protected AbstractIntegrationTestSickID(DriverWeb.BrowserId browserId) {
         this.browserId = browserId;
         driver = new DriverWeb(browserId);
     }
@@ -25,8 +21,6 @@ public abstract class AbstractIntegrationTest {
 
     @AfterAll
     public static void rampDown() {
-        new ScreenshotWeb(operativeDriver);
-        operativeDriver.quit();
         Log.print("Finished the test");
     }
 

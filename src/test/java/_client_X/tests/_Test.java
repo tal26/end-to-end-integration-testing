@@ -1,20 +1,23 @@
-package sickag.assethub;
+package _client_X.tests;
 
 import de.testers.functional_testing.frontend.web.DriverWeb;
 import de.testers.functional_testing.frontend.web.ScreenshotWeb;
+import de.testers.lib.Environment;
 import de.testers.lib.Log;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
-import sickag.id.lib.Config;
-import sickag.id.pageobject.HomePage;
+import sickag.assethub.lib.ConfigAssetHub;
+import sickag.sickid.lib.ConfigSickID;
 
-public abstract class AbstractIntegrationTest {
-    protected DriverWeb.BrowserId browserId;
+public abstract class _Test {
     protected DriverWeb driver;
     private static DriverWeb operativeDriver;
 
-    protected AbstractIntegrationTest(DriverWeb.BrowserId browserId) {
-        this.browserId = browserId;
+    protected Environment environment = ConfigSickID.production; //TODO replace by command line config
+    protected DriverWeb.BrowserId browserId;
+
+    protected _Test() {
+        browserId = DriverWeb.BrowserId.CHROMIUM; //TODO replace by command line config
         driver = new DriverWeb(browserId);
         operativeDriver = driver;
     }
@@ -30,5 +33,4 @@ public abstract class AbstractIntegrationTest {
         operativeDriver.quit();
         Log.print("Finished the test");
     }
-
 }

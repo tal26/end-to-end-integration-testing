@@ -1,4 +1,4 @@
-package sickag.id.backend;
+package sickag.sickid.backend;
 
 import de.testers.functional_testing.backend.Backend;
 import de.testers.functional_testing.backend.lib.ContentType;
