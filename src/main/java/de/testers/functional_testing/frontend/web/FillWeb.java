@@ -12,7 +12,7 @@ public class FillWeb extends AbstractWeb {
         super(driverWeb, xpath);
         this.text = text;
 
-        Log.print("Sending text '" + text + "' to" + xpath.toString());
+        Log.print("Sending text '" + text + "' to " + xpath.toString());
         driverWeb.fill(xpath, text);
     }
 }
