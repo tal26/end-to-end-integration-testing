@@ -4,7 +4,7 @@ import de.testers.functional_testing.frontend.web.DriverWeb;
 import de.testers.functional_testing.frontend.web.ScreenshotWeb;
 import org.junit.jupiter.api.Test;
 import sickag.monitoring_box.backend.BackendConfig;
-import sickag.monitoring_box.pageobject.HomePage;
+import sickag.monitoring_box.pageobject.HomePageMonitoringBox;
 
 import static io.restassured.RestAssured.given;
 
@@ -15,7 +15,7 @@ public class ExampleTest extends _Test {
 
     @Test
     void frontEndTest() {
-        HomePage home = new HomePage(driver);
+        HomePageMonitoringBox home = new HomePageMonitoringBox(driver);
         home.open();
         home.search("_client_X");
 

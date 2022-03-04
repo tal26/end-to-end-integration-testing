@@ -4,7 +4,7 @@ import de.testers.functional_testing.frontend.web.*;
 import de.testers.lib.Environment;
 import de.testers.lib.XPath;
 
-public class HomePageSickID extends AbstractPageSickID {
+public class HomePageSickID extends _AbstractPageSickID {
     private Environment environment;
 
     private XPath cookiesPopup = new XPath("Cookies Popup", "//*[@id='gdpr_modal_wrapper']/div[1]");
