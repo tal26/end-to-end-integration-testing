@@ -6,6 +6,8 @@ import de.testers.lib.Environment;
 import de.testers.lib.Url;
 
 public class CloudDestinationsAssetHubPage extends _AbstractPageAssetHub{
+    //TODO add objects
+
     public CloudDestinationsAssetHubPage(DriverWeb driverWeb,
                                 Environment environment) {
         super(driverWeb);

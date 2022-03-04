@@ -8,7 +8,14 @@ import de.testers.lib.XPath;
 
 public class AssetSearchAssetHubPage extends _AbstractPageAssetHub {
     //private XPath  = new XPath("","");
-
+    private XPath searchField;
+    private XPath filterByTrees;
+    private XPath filterByLocation;
+    private XPath filterByAssetType;
+    private XPath filterByVendor;
+    private XPath filterByProductNames;
+    //TODO table entries
+    //TODO paging system
 
     public AssetSearchAssetHubPage(DriverWeb driverWeb,
                                 Environment environment) {

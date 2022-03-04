@@ -6,6 +6,8 @@ import de.testers.lib.Environment;
 import de.testers.lib.Url;
 
 public class ServiceModuleAssetHubPage extends _AbstractPageAssetHub{
+
+    //TODO objects
     public ServiceModuleAssetHubPage(DriverWeb driverWeb,
                                 Environment environment) {
         super(driverWeb);

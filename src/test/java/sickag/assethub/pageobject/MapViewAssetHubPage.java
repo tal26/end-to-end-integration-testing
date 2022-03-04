@@ -6,6 +6,7 @@ import de.testers.lib.Environment;
 import de.testers.lib.Url;
 
 public class MapViewAssetHubPage extends _AbstractPageAssetHub{
+    //TODO
     public MapViewAssetHubPage(DriverWeb driverWeb,
                                 Environment environment) {
         super(driverWeb);
